@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: lookup
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python gui.py
+    envVars:
+      - key: LOOKUP_PASSWORD
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false

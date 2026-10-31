@@ -1,0 +1,4 @@
+requests>=2.31
+rich>=13.0
+dnspython>=2.4
+qrcode>=7.4
